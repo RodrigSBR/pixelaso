@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.body{
+    background-color: #ffbc2c;
+}
+
+.titulo{
+    /*margin-left: 4rem;*/
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1.3px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4aa3f7;
+}
+
+.logo {
+    display: flex;
+    
+}
+
+.logo img{
+    height: 55px;
+    margin-top: 10px;
+}
+
+/* menu desplegable */
+ 
+.navegacion{
+    width: 100%auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: #4aa3f7;
+}
+
+.navegacion ul{
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > img{
+    padding: none;
+    margin-top: 10px;
+}
+
+.main {
+    max-width: 35px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.menu > li > a{
+    position: relative;
+    opacity: 0.85;
+    display: block;
+    padding: 15px 15px;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    font-size: large;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    opacity: 1;
+    background-color: #4aa3f7;
+    width: 100%;
+    /* color: rgb(255, 224, 47); */
+    transition: .15s;
+}
+
+
+.submenu{
+    position: absolute;
+    background-color: #4aa3f7;
+    width: 145%;
+    border-left: #000000 10px;
+    border-right: #000000 1px;
+    visibility: hidden;
+    opacity: 0;
+    transition:  ease-in-out opacity .15s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    opacity: 0.85;
+    width: 90%;
+    letter-spacing: 0.7px;
+    color: white;
+    font: Cambria, Cochin, Georgia, Times, serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    width: 100% ;
+    opacity: 1;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.slider-inner{
+    
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    max-width: 850px;
+    padding: 40px 40px;
+    transition: all 0.3s ease-in;
+}
+
+#rotativo{
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    
+}
